@@ -5,10 +5,7 @@
         static void Main()
         {
             string name;
-            float hp;
-            float mp;
-            float attack;
-            float defense;
+            float hp, mp, attack, defense;
 
             Console.WriteLine("=======================\n플레이어 데이터 입력\n=======================");
 

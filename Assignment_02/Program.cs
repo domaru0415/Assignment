@@ -4,9 +4,12 @@
     {
         static void Main()
         {
+            string strname;
+            float hp, mp, attack, defense;
+
             Console.WriteLine("=======================\n플레이어 데이터 입력\n=======================");
 
-            string strname;
+
             while (true)
             {
                 Console.Write("플레이어 이름 : ");
@@ -22,7 +25,7 @@
                 break;
             }
 
-            float hp, mp;
+
             while (true)
             {
                 Console.Write("hp, mp : ");
@@ -42,7 +45,7 @@
                 break;
             }
 
-            float attack, deffence;
+
             while (true)
             {
                 Console.Write("공격력, 방어력 : ");
@@ -51,9 +54,9 @@
 
                 string[] atkdefArr = stratkdef.Split(',');
                 attack = float.Parse(atkdefArr[0]);
-                deffence = float.Parse(atkdefArr[1]);
+                defense = float.Parse(atkdefArr[1]);
 
-                if (attack < 15 || deffence < 5)
+                if (attack < 15 || defense < 5)
                 {
                     Console.WriteLine("공격력은 15 이상, 방어력은 5 이상이어야 합니다. 다시 입력해주세요.");
                     continue;
@@ -62,7 +65,7 @@
                 break;
             }
 
-            Player player = new Player(strname, hp, mp, attack, deffence);
+            Player player = new Player(strname, hp, mp, attack, defense);
 
             Console.WriteLine();
             Console.WriteLine("=======================");
