@@ -1,10 +1,25 @@
 ﻿class Player
 {
-    public string name { get; protected set; }
-    public float hp { get; protected set; }
-    public float mp { get; protected set; }
-    public float attack {  get; protected set; }
-    public float defense { get; protected set; }
+    private string name, hp, mp, attack, defense;
+    public string name 
+    {
+        get
+        {
+            return name;
+            return hp;
+            return mp;
+            return attack;
+            return defense;
+        }
+        set
+        {
+            name = value;
+            hp = value;
+            mp = value;
+            attack = value;
+            defense = value;
+        } 
+    }
 
     public Player(string name, float hp, float mp, float attack, float defense)
     {
